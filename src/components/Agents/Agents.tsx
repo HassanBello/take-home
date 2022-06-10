@@ -65,13 +65,15 @@ const Agents: FC = () => {
   return (
     <>
       <div className="flex flex-col p-3">
-        <div className="flex justify-center my-2">
-          <input
+        <div className="flex justify-center my-2 ">
+        <div className="w-4/12">
+        <input
             type="text"
-            className="custom-input mx-1 w-1/2"
+            className="custom-input mx-1 "
             placeholder="Search by Location"
             onChange={filterAgent}
           />
+        </div>
         </div>
         <div className="flex justify-center">
           <CustomBtn  click={() => setModal(!showModal)}>
