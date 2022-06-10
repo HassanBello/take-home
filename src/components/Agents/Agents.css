@@ -1,0 +1,11 @@
+.agents {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+}
+.submit-btn {
+    max-width: 100px;
+    padding: 8px;
+    margin: auto;
+    cursor: pointer;
+}
