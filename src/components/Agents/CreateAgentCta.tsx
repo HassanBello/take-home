@@ -83,6 +83,7 @@ const CreateAgent: FC<ICreateAgent> = ({ submitAgent }) => {
         <div className="flex justify-center">
           <input
             type="submit"
+            value={'join the team'}
             className="text-base bg-gray-400 rounded-lg max-w-[100px] p-2 cursor-pointer"
           />
         </div>
