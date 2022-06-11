@@ -115,17 +115,4 @@ app.post("/agent", checkSchema(agentSchema), async (req, res, next) => {
   }
 });
 
-app.put("/agent", async (req, res, next) => {
-  const agent = await Agent.findOne({
-    where: { practiceAreas: req.query.practiceAreas },
-  });
-  if (agent === null || agent === []) {
-    return res.status(404).json({
-      message: "No Agent found",
-    });
-  } else {
-    return res.status(200).json(agent);
-  }
-});
-
 module.exports = app;
